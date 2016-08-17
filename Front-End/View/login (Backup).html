@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="thesisMate">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thesis Mate</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="loginController.js"></script>
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+</head>
+
+<body>
+	<div class="login" ng-controller="LoginController">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Login</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field"  placeholder="username" ng-model="userName">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" placeholder="password" ng-model="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+				
+                <a class="btn btn-primary btn-large btn-block" ng-click = "loginSubmit()">login</a>
+    
+			</div>
+		</div>
+	</div>
+</body>
+    
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="thesisMate">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Thesis Mate</title>
+    <link rel="stylesheet" href="/Front-End/Styles/style.css">
+</head>
+
+<body>
+	<div class="login" ng-controller="LoginController">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Registration</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Enter Username" id="userName" name="userName">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="Enter Password" id="password" name="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+				
+                <div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="Retype Password" id="rePassword" name="rePassword">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+                
+                <div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Enter First Name" id="fName" name="fName">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+                
+                <div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Enter Last Name" id="lName" name="lName">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+                
+                <div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="Enter your ID number" id="id" name="id">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+                
+                <a class="btn btn-primary btn-large btn-block" ng-href="/home">Register</a>
+                
+			</div>
+		</div>
+	</div>
+</body>
+    
+</html>
