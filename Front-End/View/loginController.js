@@ -1,5 +1,5 @@
 
-var myApp = angular.module('thesisMate',['ngRoute']);
+var myApp = angular.module('onlineShopping',['ngRoute']);
 
 myApp .config(['$routeProvider',
   function($routeProvider,$rootScope) {
@@ -11,20 +11,27 @@ myApp .config(['$routeProvider',
         templateUrl: 'login.html'
       }).
       when('/home', {
-        templateUrl: 'home.html'
+       templateUrl: 'home.html',
+        resolve: {
+                  check: function($rootScope,$location) {
+                    if(!$rootScope.auth)
+                        $location.path ('/');
+                  }
+                }
       }).
       otherwise({
         redirectTo: '/'
       });
   }]);
 
-myApp.controller('LoginController', ['$scope','$rootScope','$location', function loginController($scope,$rootScope,$location) {
+myApp.controller('LoginController', ['$scope','$rootScope','$location','$http', function loginController($scope,$rootScope,$location,$http) {
         $scope.userName = "";
         $scope.password = "";
     
         $scope.loginSubmit = function (){
-            console.info("The loginSubmit() is called!");
-            if( ($scope.userName.length > 0 && $scope.password.length > 0) &&  ($scope.userName == $scope.password) ){
+           // console.info("The loginSubmit() is called!");
+            if( ($scope.userName.length > 0 && $scope.password.length > 0)){
+                $http.get('http://');
                 $rootScope.auth = true;
             }
             else

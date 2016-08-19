@@ -1,0 +1,8 @@
+{
+    "records" : [
+
+        {"username" : "chucky" , "passoword" : "rahul", "fname" : "Sangeetha", "lname": "Dhan"},
+        {"username" : "mmrohit" , "passoword" : "pikachu", "fname" : "Rohit", "lname": "Mundayadan"},
+        {"username" : "kvgirija" , "passoword" : "damo", "fname" : "Girija", "lname": "Kaiprath Veetil"}
+    ]
+}
